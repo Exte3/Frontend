@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo CSS::</title>
+    
+    <!-- Estilos CSS -->
+    <style>
+        *{
+            /*Margin da la separacion entre elementos*/
+            margin:0;
+            padding: 0;
+        }
+        /*3 formas para dar estilo a los elementos*/
+        /* Por la etiqueta, todos los elemnetos se ve afectados*/
+        p {
+            color: rgb(53, 80, 200);
+            font-family: verdana;
+            font-size: 20px;
+        }
+        /*Por medio de la clase (.), solo aquellos que tengan esa clase*/
+        .cp2 {
+            color: rgb(53, 200, 85);
+            font-size: 25px;
+        }
+        /*Por medio del id*/
+        #p4 {
+            color: rgb(211, 36, 80);
+            font-size: 30px;
+        }
+
+        #div1 {
+            /*Los margin paddin y border consumen espacio de los div u otras cosas*/
+            width: 300px;
+            height: 300px;
+            background-color: rgb(250, 161, 161);
+        }
+        #div2 {
+            width: 10px;
+            height: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- El id es unico, no se debe usar dos veces en la misma pagina -->
+        <!-- Pero en bootstrap no se usan los ID ya que se tiene que hacer con clases-->
+        <p id="p1">Parrafo 1</p>
+        <p id="p2" class="cp2">Parrafo 2</p>
+        <p id="p3" class="cp2">Parrafo 3</p>
+        <p id="p4" class="cp3">Parrafo 4</p>
+        <br>
+        <div id="div1">
+            <div id="div2">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
